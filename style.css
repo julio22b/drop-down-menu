@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-list{
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+
+.main-list > li{
+    margin: 2em;
+    padding: 1em;
+    position: relative;
+}
+
+.main-list > li > a, .secondary-list > li > a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.secondary-list{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    margin-top: 15%;
+    opacity: 0;
+}
+
+.secondary-list li{
+    text-align: center;
+}
+
+.active{
+    opacity: 1;
+}
